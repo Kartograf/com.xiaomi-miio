@@ -78,6 +78,7 @@ geofencing.db-journal			google_app_measurement.db-journal	miio.db-journal				mii
     * __Key (hex):__ 00000000000000000000000000000000
     * __Selectbox Plaintext / Hex:__ Hex
 * Hit the decrypt button. Your token are the first two lines of the right block of code. These two lines should contain a token of 32 characters and should be the correct token for your device.
+* Or Linux command: echo '0: <your 96 character key>' | xxd -r -p | openssl enc -d -aes-128-ecb -nopad -nosalt -K 00000000000000000000000000000000
 * If this tutorial did not work for you, [here](https://github.com/mediter/miio/blob/master/docs/ios-token-without-reset.md) is another that might work.
 
 ## Jailbroken iOS users
@@ -97,6 +98,7 @@ geofencing.db-journal			google_app_measurement.db-journal	miio.db-journal				mii
     * __Key (hex):__ 00000000000000000000000000000000
     * __Selectbox Plaintext / Hex:__ Hex
 * Hit the decrypt button. Your token are the first two lines of the right block of code. These two lines should contain a token of 32 characters and should be the correct token for your device.
+* Or Linux command: echo '0: <your 96 character key>' | xxd -r -p | openssl enc -d -aes-128-ecb -nopad -nosalt -K 00000000000000000000000000000000
 
 ## Method 2 - Obtain Xiaomi Gateway device token
 This method is specifically for the Xiaomi Gateway.
